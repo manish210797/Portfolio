@@ -607,6 +607,11 @@ section {
     left: -30px;
     animation: float-badge 4s ease-in-out 2s infinite;
 }
+.badge-3 {
+    bottom: 60px;
+    right: -45px;
+    animation: float-badge 3s ease-in-out 3s infinite;
+}
 
 @keyframes float-badge {
     0%, 100% { transform: translateY(0); }
