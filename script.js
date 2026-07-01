@@ -33,11 +33,9 @@ function closeMobileNav() {
 
 /* ---- Typed animation ---- */
 const roles = [
-    'Web Developer',
-    'PHP / Laravel Dev',
-    'JavaScript Enthusiast',
-    'Problem Solver',
-    'UI Craftsman',
+    'Web Developer , PHP / Laravel Developer',
+    'HTML / CSS / JS Enthusiast',
+    'Problem Solver , UI Craftsman',
 ];
 let roleIdx = 0, charIdx = 0, isDeleting = false;
 const typedEl = document.getElementById('typed-role');
@@ -50,8 +48,8 @@ function typeLoop() {
         typedEl.textContent = current.slice(0, ++charIdx);
     }
 
-    let delay = isDeleting ? 60 : 110;
-    if (!isDeleting && charIdx === current.length) { delay = 2000; isDeleting = true; }
+    let delay = isDeleting ? 60 : 100;
+    if (!isDeleting && charIdx === current.length) { delay = 1000; isDeleting = true; }
     else if (isDeleting && charIdx === 0) { isDeleting = false; roleIdx = (roleIdx + 1) % roles.length; delay = 400; }
 
     setTimeout(typeLoop, delay);
